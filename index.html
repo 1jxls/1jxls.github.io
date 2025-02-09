@@ -3,50 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Will You Be My Valentine?</title>
+    <title>For You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #ffe6f2;
-            color: #ff3366;
+            margin: 0;
+            padding: 0;
             font-family: 'Arial', sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            font-size: 40px;
-        }
-        button {
-            background-color: #ff3366;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBjt6x4H72qcw2-5JdIz5P4uxosDvJ9-gTPrT3j5bmpMs-j5AL4mPEEyrt&s=10');
+            background-size: cover;
+            background-position: center;
             color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 20px;
-            cursor: pointer;
-            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
         }
-        button:hover {
-            background-color: #ff6699;
+
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 50px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .button {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ff1f5b;
         }
     </style>
 </head>
 <body>
-    <h1>Hi, Angel. Will You Be My Valentine?</h1>
-    <button id="yesButton">Yes</button>
-    <button id="noButton">No</button>
-
-    <p id="response" style="font-size: 24px; margin-top: 20px;"></p>
-
-    <script>
-        document.getElementById('yesButton').onclick = function() {
-            document.getElementById('response').innerText = "Yay! I'm so happy! ❤️";
-        };
-
-        document.getElementById('noButton').onclick = function() {
-            document.getElementById('response').innerText = "Oh no! Are you sure? 😢";
-            setTimeout(() => {
-                document.getElementById('response').innerText = "You're breaking my heart! 💔";
-            }, 2000);
-        };
-    </script>
+    <div class="container">
+        <h1>This is for You❤️</h1>
+        <p>Hi, Ms. Injel.</p>
+        <p>Just wanted to let you know how amazing you are!</p>
+        <p>Your smile brightens my day.</p>
+        <p>Hope you have a wonderful day!</p>
+        <button class="button" onclick="alert('You are special!')">Click Me!</button>
+    </div>
 </body>
 </html>
